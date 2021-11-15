@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/baseline_info_black_24dp.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/baseline_settings_black_24dp.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/baseline_shopping_bag_black_24dp.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/baseline_star_border_black_24dp.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/btn_shape.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/edittext_shape.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/ic_group_19.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/ic_group_20.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/ic_infor_not_selected.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/ic_user_small.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/outline_person.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/drawable/phone_verify_shape.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/activity_main.xml" value="0.29739583333333336" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/dialog_layout.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/dialog_layout_erro.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/fragment_blank.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/home_screen_layout.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/log_in_email_layout.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/log_in_layout.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/login_password_layout.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/nav_user.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/phone_verify_layout.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/phonenumber_insert_layout.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/phonenumber_verify_layout.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/sig_up_activity_layout.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/sig_up_layout.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/verify_email_layout.xml" value="0.5" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/layout/verify_otp_layout.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/EverGreen/app/src/main/res/menu/side_nav.xml" value="0.3145833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

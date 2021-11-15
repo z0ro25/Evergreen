@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+    <item android:id="@+id/sidenav_menu"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/menu" />
+
+    <item android:id="@+id/sidenav_loyalty"
+        android:icon="@drawable/ic_loyalty_no_selected"
+        android:title="@string/loyalty"/>
+
+    <item android:id="@+id/sidenav_oderhistory"
+        android:icon="@drawable/ic_oder_not_selected"
+        android:title="@string/oder_history"/>
+
+    <item android:id="@+id/sidenav_refer"
+        android:icon="@drawable/ic_refer_not_selected"
+        android:title="@string/refer_a_friend"/>
+
+    <item android:id="@+id/sidenav_shopinfo"
+        android:icon="@drawable/ic__infor_not_selected"
+        android:title="@string/shop_infor"/>
+
+    <item android:id="@+id/sidenav_notification"
+        android:icon="@drawable/ic_notification_not_selected"
+        android:title="@string/notification"/>
+    <item android:id="@+id/sidenav_logout"
+
+        android:title="Log Out"/>
+</menu>
