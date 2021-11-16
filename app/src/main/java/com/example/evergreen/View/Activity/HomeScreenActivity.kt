@@ -42,6 +42,7 @@ class HomeScreenActivity : BaseActivity() {
 
         if (isLogedin== true){
             GlobalScope.launch {
+                delay(200)
                 supportFragmentManager.beginTransaction()
                     .setCustomAnimations(R.anim.dialog_enter_anim,R.anim.dialog_exit_anim)
                     .add(R.id.container_dialog,CustomeDialog.newInstance("Logged in","",getColor(R.color.btn_color)),"CustomDialogues")

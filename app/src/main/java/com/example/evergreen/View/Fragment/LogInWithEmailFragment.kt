@@ -81,11 +81,7 @@ class LogInWithEmailFragment : BaseFragment() {
                     Toast.makeText(requireActivity(), "your email is incorrect", Toast.LENGTH_SHORT)
                         .show()
                 }
-            }else {
-                Toast.makeText(requireActivity(), "your email or phone number is incorrect", Toast.LENGTH_SHORT)
-                    .show()
             }
-
         }
     }
 

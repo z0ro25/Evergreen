@@ -48,7 +48,7 @@ class VerifyOTPCodeFragment : BaseFragment() {
         code2_verify.inputType = InputType.TYPE_CLASS_NUMBER
         code3_verify.inputType = InputType.TYPE_CLASS_NUMBER
         code4_verify.inputType = InputType.TYPE_CLASS_NUMBER
-
+        code1_verify.requestFocus()
         btn_next_2.isEnabled = false
         code1_verify.addTextChangedListener(object :TextWatcher{
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -220,6 +220,13 @@ class VerifyOTPCodeFragment : BaseFragment() {
         val sharedOTPCode = SharedOTPCode(requireActivity())
         sharedOTPCode.saveLogInState(Key,value)
     }
+
+    override fun onResume() {
+        super.onResume()
+        code1_verify.requestFocus()
+    }
+
+
     companion object {
 
         @JvmStatic

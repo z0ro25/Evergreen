@@ -19,6 +19,7 @@ import com.example.evergreen.View.sharedpreference.SharedOTPCode
 import com.example.evergreen.ViewModel.LoginViewmodel
 import com.example.evergreen.custumview.CustomeDialog
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.log_in_email_layout.*
 import kotlinx.android.synthetic.main.login_password_layout.*
 import kotlinx.coroutines.*
 
@@ -61,6 +62,9 @@ class LogInPasswordFragment : BaseFragment() {
             checkPassWord()
             val user = HiepUser("password","hieptt123","123qwe","player")
             postValue(user)
+        }
+        imb_back_verifypass.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
         }
     }
 

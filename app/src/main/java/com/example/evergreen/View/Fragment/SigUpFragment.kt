@@ -42,7 +42,7 @@ class SigUpFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        sigup_user_name.requestFocus()
         arguments?.let {
             userPhoneNumber = it.getInt(PASRT_KEY)
         }
