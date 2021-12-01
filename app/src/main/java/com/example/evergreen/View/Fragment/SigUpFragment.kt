@@ -58,7 +58,6 @@ class SigUpFragment : BaseFragment() {
                 currenDay).show()
         }
         btn_done_sigup.setOnClickListener {
-            //   userAdded.userId = 1
             val userName = sigup_user_name.text.toString()
             val email = sigup_email.text.toString()
             val phoneNumber = userPhoneNumber
@@ -87,73 +86,30 @@ class SigUpFragment : BaseFragment() {
     private fun checkEmail() {
         if (sigup_user_name.text!!.length >= 20 || sigup_user_name.text!!.length <= 10) {
             username_tip_layout.helperText = "First and Last Name Required"
-        } else {
-            username_tip_layout.helperText = ""
-        }
+        } else username_tip_layout.helperText = ""
         if (userAdded.email?.contains("@gmail.com") == false) {
             email_tip_layout.helperText = "Invalid Email Address"
-        } else {
-            email_tip_layout.helperText = ""
+        } else email_tip_layout.helperText = ""
+        if (checkAge(userBrithDay)) {
+            //login
+            saveNewUser(userAdded)
+        } else showDiaLog()
+
+
+    }
+        private fun checkAge(mdate: Calendar): Boolean {
+            var userAge = 0
+            if (sigup_date.text.isEmpty()) return false
+            if (currenYear - 21 > mdate.get(Calendar.YEAR) ) return true
+            if  (currenYear - 21 != mdate.get(Calendar.YEAR) ) return false
+            if (currenMonth < mdate.get(Calendar.MONTH)  ) return false
+            if (currenMonth != mdate.get(Calendar.MONTH) ) return true
+            userAge = (if ( currenDay < mdate.get(Calendar.DAY_OF_MONTH)) {
+                currenYear - (mdate.get(Calendar.YEAR) + 1)
+            } else currenYear - (mdate.get(Calendar.YEAR)))
+            return userAge >= 21
         }
-        checkAge()
 
-    }
-
-
-    private fun checkAge() {
-
-
-        if (userAdded.dateOfBirth?.length!! <= 8 || sigup_date.text.isNotEmpty() || sigup_email.text!!.isNotEmpty() || sigup_password.text!!.isNotEmpty() || sigup_user_name.text!!.isNotEmpty()) {
-            if (currenYear <= userBrithDay.get(Calendar.YEAR)) {
-                date_ipt_layout.helperText = "Users must be 21 or older"
-                showDiaLog()
-            } else {
-                if (currenMonth == userBrithDay.get(Calendar.MONTH)) {
-                    if (currenDay < userBrithDay.get(Calendar.DAY_OF_MONTH)) {
-                        val age = currenYear - (userBrithDay.get(Calendar.YEAR) + 1)
-                        if (age < 21) {
-                            date_ipt_layout.helperText = "Users must be 21 or older"
-                            showDiaLog()
-                        } else {//save user
-                            saveNewUser(userAdded)
-                            date_ipt_layout.helperText = ""
-                            Toast.makeText(requireContext().applicationContext,
-                                "sig up complete",
-                                Toast.LENGTH_SHORT).show()
-                        }
-                    } else {
-                        val age = currenYear - userBrithDay.get(Calendar.YEAR)
-                        if (age < 21) {
-                            date_ipt_layout.helperText = "Users must be 21 or older"
-                            showDiaLog()
-                        } else {
-                            //save user
-                            saveNewUser(userAdded)
-                            date_ipt_layout.helperText = ""
-                            Toast.makeText(requireContext().applicationContext,
-                                "sig up complete",
-                                Toast.LENGTH_SHORT).show()
-                        }
-                    }
-                } else if (currenMonth > userBrithDay.get(Calendar.MONTH)) {
-                    val age = currenYear - userBrithDay.get(Calendar.YEAR)
-                    if (age < 21) {
-                        date_ipt_layout.helperText = "Users must be 21 or older"
-                        showDiaLog()
-                    } else {
-                        //save user
-                        saveNewUser(userAdded)
-                        date_ipt_layout.helperText = ""
-                        Toast.makeText(requireContext().applicationContext,
-                            "sig up complete",
-                            Toast.LENGTH_SHORT).show()
-                    }
-                }
-            }
-        } else Toast.makeText(requireContext().applicationContext,
-            "your information is invalidate ",
-            Toast.LENGTH_SHORT).show()
-    }
 
     private fun showDiaLog() {
         AlertDialog.Builder(requireContext())
